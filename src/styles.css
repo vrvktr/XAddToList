@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #101d33;
+  background: #f5f6fb;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 24px;
+  background: #f5f6fb;
+}
+
+.list-card {
+  width: min(100%, 566px);
+  border: 1px solid #e9ebf1 !important;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(28, 39, 60, 0.08);
+}
+
+.list-card .card-body {
+  padding: 24px 23px 22px;
+}
+
+.list-title {
+  margin: 0 0 10px;
+  color: #101d33;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.add-form {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.item-input {
+  min-width: 0;
+  height: 37px;
+  padding: 7px 10px;
+  border-color: #e4e7ee;
+  border-radius: 9px;
+  font-size: 13px;
+  box-shadow: none !important;
+}
+
+.item-input:focus {
+  border-color: #83a5fa;
+}
+
+.item-input::placeholder {
+  color: #7b7f89;
+  opacity: 1;
+}
+
+.add-button {
+  flex: 0 0 auto;
+  min-width: 50px;
+  height: 37px;
+  padding: 7px 12px;
+  border: 0;
+  border-radius: 9px;
+  background: #7397f4;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.add-button:hover,
+.add-button:focus {
+  background: #5f83e2;
+}
+
+.empty-message {
+  padding-top: 4px;
+  color: #75839a;
+  font-size: 13px;
+}
+
+.item-list {
+  gap: 10px;
+  border: 0;
+}
+
+.item-row {
+  min-height: 54px;
+  padding: 8px 10px;
+  border: 1px solid #e8eaf0 !important;
+  border-radius: 9px !important;
+  color: #142139;
+  font-size: 13px;
+}
+
+.item-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  padding-right: 12px;
+}
+
+.remove-button {
+  flex: 0 0 auto;
+  min-height: 36px;
+  padding: 7px 12px;
+  border: 1px solid #ffd0d0;
+  border-radius: 9px;
+  background: #ffe3e3;
+  color: #9d1c1c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.remove-button:hover,
+.remove-button:focus {
+  border-color: #ffc0c0;
+  background: #ffd5d5;
+  color: #8d1717;
+}
+
+@media (max-width: 480px) {
+  .app-shell {
+    padding: 16px;
+  }
+
+  .list-card .card-body {
+    padding: 20px 16px;
+  }
+
+  .list-title {
+    font-size: 22px;
+  }
+}

@@ -1,28 +1,42 @@
 # Add Items to List
 
-A small React + Vite app styled with Bootstrap 5.
+A simple React app for creating and managing a list of items. Add items with the
+form and remove them individually; the list is held in memory and resets when
+the page is refreshed.
+
+## Features
+
+- Add an item with the **Add** button or by pressing Enter.
+- Ignore empty or whitespace-only input.
+- Remove individual items from the list.
+- Show a helpful message when the list is empty.
+
+## Built with
+
+- React
+- Vite
+- Bootstrap 5
 
 ## Requirements
 
-- Node.js 20+ recommended
+- Node.js 20 or later
 - npm
 
-## Run locally
+## Getting started
+
+Install dependencies and start the development server:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite.
+Open the local URL printed by Vite in your browser.
 
-## Features
+## Available scripts
 
-- Add an item with the **Add** button or Enter.
-- Ignores empty or whitespace-only input.
-- Clears the input after a successful add.
-- Displays items in an unordered list.
-- Remove an individual item with its **Remove** button.
-- Shows `No items yet. Add your first one!` when the list is empty.
-- The input uses `name="item"` and the required placeholder.
-# XAddToList
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local development server |
+| `npm run build` | Create a production build in `dist/` |
+| `npm run preview` | Preview the production build locally |
